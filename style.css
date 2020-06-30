@@ -2,7 +2,8 @@ body,html{
     margin: 0;
     padding: 0;
     background-color: #894B9D;
-    padding-bottom: 180px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -21,6 +22,7 @@ header{
 
 .lefth h3{
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 40px;
     margin-top: 14px;
@@ -39,6 +41,7 @@ header{
 .jalan{
     position: absolute;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 250px;
     margin-top: -3px;
 }
@@ -61,6 +64,7 @@ header{
 .topmenu li a{
     display: block;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
 }
@@ -109,7 +113,7 @@ header{
     position: absolute;
     list-style: none;
     color: white;
-    right: 55px;
+    right: 30px;
     margin-top: -35px;
 }
 
@@ -123,7 +127,7 @@ header{
     position: absolute;
     list-style: none;
     color: white;
-    right: 370px;
+    right: 365px;
     margin-top: -70px;
 }
 
@@ -131,7 +135,7 @@ header{
     position: absolute;
     list-style: none;
     color: white;
-    right: 411px;
+    right: 414px;
     margin-top: -50px;
 }
 
@@ -165,14 +169,17 @@ header{
 
 .midbar li a {
     display: block;
-    color:black;
+    color: #696969;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     text-align: center;
     padding: 16px 12px;
     text-decoration: none;
 }
 
 .midbar li a:hover:not(.active){
-    background-color: yellow;
+    background-color: #EFC41B;
+    color: white;
 }
 
 input[type=text] {
@@ -191,7 +198,7 @@ input[type=text] {
 }
 
 .button{
-    background-color: #FFD700;
+    background-color: #F29C1F;
     border: none;
     color: white;
     padding: 8px;
@@ -217,69 +224,91 @@ input[type=text] {
 
 .kotak{
     width: 100%;
-    box-sizing: border-box;
+    height: 350px;
     display: flex;
     justify-content: space-between;
-}
-
-.kotak div{
-    width: 100%;
-    height: 350px;
+    box-sizing: border-box;
 }
 
 .kotak1{
     background-color: #894B9D;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .kotak2{
     background-color: #F29C1F;
+    flex: 1;
 }
 
 .kotak3{
     background-color: #894B9D;
+    flex: 1;
 }
 
 .kotak4{
     background-color: #F29C1F;
+    flex: 1;
 }
 
 .news{
-    margin: 40px 120px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
 }
 
 .sound{
-    margin: 40px 120px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .piala{
-    margin: 40px 130px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+        
 }
 
 .gallery{
-    margin: 40px 140px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .tk1{
     color: white;
-    margin-top: -50px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .tk2{
     color: white;
-    margin-top: -40px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .tk3{
     color: white;
-    margin-top: -40px;
+    margin-top: 15px;
     text-align: center;
 }
 
 .tk4{
     color: white;
-    margin-top: -40px;
+    margin-top: 13px;
     text-align: center;
 }
 
@@ -343,8 +372,101 @@ input[type=text] {
 .footer div{
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .foot1{
+    flex: 1;
+    box-sizing: border-box;
+
+}
+
+.foot2{
+    flex: 0.50;
+    box-sizing: border-box;
+
+}
+
+.foot3{
+    flex: 0.50;
+    box-sizing: border-box;
+
+}
+
+.foot4{
+    flex: 0.50;
+    box-sizing: border-box;
+
+}
+
+.foot5{
+    flex: 1.30;
+    box-sizing: border-box;
+
+}
+
+.ftlogo{
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.ofc{
+    margin-left: 50px;
+    color: white;
+}
+
+.ftemail{
+    margin-left: 50px;
+    color: white;
+    line-height: 1.65px;
+}
+
+.ft2{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.ft3{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.ft4{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.ft5{
+    margin-top: 20px;
+}
+
+.one{
+    margin-left: 7px;
+    color: white;
+    margin-top: 12px;
+    float: left;
+}
+
+.playstore {
+    margin-left: 10px;
+    position: static;
+
+}
+
+.ikut{
+    color: white;
+    margin-left: 8px;
+    line-height: 1px;
+    position: relative;
+}
+
+.app{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 115px;
 
 }
