@@ -1,154 +1,71 @@
-body,html{
+*{
     margin: 0;
     padding: 0;
+
+}
+
+body,html{
     background-color: #894B9D;
-    padding-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    width: 100%;
-    height: 50px;
-    background-color: #F29C1F;
-    margin: 0;
-}
-
-.lefth{
-    width: 200px;
-    height: 50px;
-    box-sizing: border-box;
-    background-color: #C03B2B;
-}
-
-.lefth h3{
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin-left: 40px;
-    margin-top: 14px;
-}
-
-.triangle{
-    width: 0;
-    height: 0;
-    border-bottom: 70px solid #C03B2B;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    margin-left: 135px;
-    margin-top: -70px;
-}
-
-.jalan{
-    position: absolute;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 250px;
-    margin-top: -3px;
-}
-
-.topmenu{
-    position: absolute;
-    list-style-type: none;
-    margin: 0;
-    margin-top: 9px;
-    padding: 0;
-    right: 300px;
-    overflow: hidden;
-}
-
-.topmenu li{
-    float: left;
-
-}
-
-.topmenu li a{
-    display: block;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: white;
-}
-
-.icig{
-    position: absolute;
-    right: 100px;
-    margin-top: 10px;
-
-}
-
-.ictw{
-    position: absolute;
-    right: 155px;
-    margin-top: 10px;
-}
-
-.icfb{
-    position: absolute;
-    right: 210px;
-    margin-top: 10px;
-
-}
-
-.logo1{
     position: relative;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-
-.logo2{
-    position: absolute;
-    right: 270px;
-    margin-top: -65px;
-}
-
-.paragraf{
-    position: absolute;
-    list-style: none;
+    display: flex;
+    background-color: #F29C1F;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
     color: white;
-    right: 55px;
-    margin-top: -55px;
 }
 
-.paragraf2{
+.txleft{
     position: absolute;
+    display: flex;
+    left: 30px;
+    top: 15px;
+}
+
+.top2{
+    margin-left: -100px;
+    justify-content: space-between;
+}
+
+.bgleft{
+    display: flex;
+    left: 0px;
+    margin-top: 1px;
+}
+
+header ul{
+    display: flex;
     list-style: none;
-    color: white;
-    right: 30px;
-    margin-top: -35px;
+    width: 20%;
+    justify-content: space-between;
+    margin-top: 2px;
 }
 
-.logo3{
-    position: absolute;
-    right: 600px;
-    margin-top: -65px;
+header ul li a{
+    color: white;
+    text-decoration: none;
+    display: flex;
 }
 
-.paragraf3{
-    position: absolute;
-    list-style: none;
-    color: white;
-    right: 365px;
-    margin-top: -70px;
+header ul li a:hover:not(.active){
+    color: black;
 }
 
-.paragraf4{
-    position: absolute;
-    list-style: none;
-    color: white;
-    right: 414px;
-    margin-top: -50px;
-}
-
-.paragraf5{
-    position: absolute;
-    list-style: none;
-    color: white;
-    right: 430px;
-    margin-top: -30px;
+.icontop{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    padding: 0 40px;
+    margin-right: 80px;
 }
 
 .bar-container{
-    margin-top: 50px;
+    margin-top: 130px;
+    margin-bottom: 0.20px;
     width: calc(100% - 200px);
     padding: 0 100px;
 }
@@ -213,18 +130,63 @@ input[type=text] {
 
 .button1{border-radius: 12px;}
 
-.zzz{
+.slider {
     height: 485px;
-    width: calc(100% - 200px);
-    padding: 0 100px;
-    background-image: url(gambar/slide1.jpg);
-    background-size: cover;
-    
+    overflow: hidden;
+    box-sizing: border-box;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+  
+}
+
+.slider figure {
+	position: relative;
+	width: 500%;
+    margin: 0;
+    margin-top: -20px;
+	left: 0;
+	animation: 20s slider infinite;
+}
+
+.slider figure img {
+	width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
 }
 
 .kotak{
     width: 100%;
     height: 350px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -233,7 +195,6 @@ input[type=text] {
 .kotak1{
     background-color: #894B9D;
     flex: 1;
-    box-sizing: border-box;
 }
 
 .kotak2{
@@ -340,133 +301,114 @@ input[type=text] {
     color: white;
 }
 
-
-.line1{
-    width: 100%;
+.asosiasi {
+    height: 125px;
+    overflow: hidden;
     box-sizing: border-box;
-    height: 5px;
-    background-color: red;
+  
 }
 
-.asosiasi{
-    width: calc100%;
-    height: 150px;
-    background-image: url(gambar/asosiasi.jpg);
-    background-size: cover;    
+.asosiasi figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+}
+.asosiasi figure img {
+	width: 20%;
+    float: left;
 }
 
-.line2{
-    width: 100%;
-    box-sizing: border-box;
-    background-color: orangered;
-    height: 5px;
-}
-
-.footer{
-    width: 100%;
-    box-sizing: border-box;
+footer{
+    position: relative;
     display: flex;
+    background-color: #894B9D;
+    justify-content: space-around;
+    height: 250px;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
     justify-content: space-between;
 }
 
-.footer div{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    display: flex;
 }
 
-.foot1{
-    flex: 1;
-    box-sizing: border-box;
-
+footer ul li a:hover:not(.active){
+    color: #F29C1F;
 }
 
 .foot2{
-    flex: 0.50;
-    box-sizing: border-box;
+    margin-top: 20px;
+}
 
+.ft2{
+    font-size: 18px;
 }
 
 .foot3{
-    flex: 0.50;
-    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+.ft3{
+    font-size: 18px;
 
 }
 
 .foot4{
-    flex: 0.50;
-    box-sizing: border-box;
-
-}
-
-.foot5{
-    flex: 1.30;
-    box-sizing: border-box;
-
-}
-
-.ftlogo{
-    box-sizing: border-box;
-    margin-left: 50px;
+    margin-right: -100px;
     margin-top: 20px;
-}
-
-.ofc{
-    margin-left: 50px;
-    color: white;
-}
-
-.ftemail{
-    margin-left: 50px;
-    color: white;
-    line-height: 1.65px;
-}
-
-.ft2{
-    margin-top: 30px;
-    margin-left: 10px;
-    color: white;
-}
-
-.ft3{
-    margin-top: 30px;
-    margin-left: 10px;
-    color: white;
 }
 
 .ft4{
-    margin-top: 30px;
-    margin-left: 10px;
-    color: white;
+    font-size: 18px;
+
 }
 
-.ft5{
+
+.foot5{
+    position: relative;
+    float: right;
+    right: 0px;
     margin-top: 20px;
 }
 
-.one{
-    margin-left: 7px;
-    color: white;
-    margin-top: 12px;
-    float: left;
+.ft5{
+    font-weight: 100;
+    font-size: 20px;
 }
 
-.playstore {
+.foot5 ul p{
     margin-left: 10px;
-    position: static;
-
 }
 
-.ikut{
-    color: white;
-    margin-left: 8px;
-    line-height: 1px;
+.foot6{
+    margin-top: 20px;
+    margin-right: 0px;
     position: relative;
 }
 
-.app{
-    position: absolute;
-    margin-top: -20px;
-    margin-left: 115px;
+/* Responsive */
 
+@media screen and (max-width: 1000px){
+    header div ul{
+        width: 50%;
+
+    }
+    header div h4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    header ul li{
+        display: none;
+    }
+    
 }
