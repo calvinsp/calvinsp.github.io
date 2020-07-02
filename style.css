@@ -283,26 +283,26 @@ input[type=text] {
     background-color: #253b80;
     flex: 1;
     box-sizing: border-box;
-	margin: 5px 5px;
+    margin: 5px 5px;
     
 }
 
 .kotak2{
     background-color: #F29C1F;
     flex: 1;
-	margin: 5px 5px;
+    margin: 5px 5px;
 }
 
 .kotak3{
     background-color: #253b80;
     flex: 1;
-	margin: 5px 5px;
+    margin: 5px 5px;
 }
 
 .kotak4{
     background-color: #F29C1F;
     flex: 1;
-	margin: 5px 5px;
+    margin: 5px 5px;
 }
 
 .news{
@@ -594,21 +594,27 @@ input[type=text] {
         display: none;
     }
     [class*="foot3"]{
-        padding-top: 70px;
+        position: absolute;
+        padding-top: 68px;
+        padding-left: 200px;
     
     }
-	
-	[class*="foot2"]{
+
+    [class*="foot2"]{
         padding-left: 0px;
     }
     [class*="footer"]{
         position: relative;
     }
-	
     [class*="atas"]{
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 470px){
+
+    
 }
 
             
