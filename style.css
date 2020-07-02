@@ -593,6 +593,14 @@ input[type=text] {
         padding-top: 70px;
     
     }
+	
+	[class*="foot2"]{
+        padding-left: 0px;
+    }
+    [class*="footer"]{
+        position: relative;
+    }
+	
     [class*="atas"]{
         display: none;
     }
