@@ -283,22 +283,26 @@ input[type=text] {
     background-color: #253b80;
     flex: 1;
     box-sizing: border-box;
+	margin: 5px 5px;
     
 }
 
 .kotak2{
     background-color: #F29C1F;
     flex: 1;
+	margin: 5px 5px;
 }
 
 .kotak3{
     background-color: #253b80;
     flex: 1;
+	margin: 5px 5px;
 }
 
 .kotak4{
     background-color: #F29C1F;
     flex: 1;
+	margin: 5px 5px;
 }
 
 .news{
