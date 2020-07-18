@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>FINAL PROJECT UAS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>TES</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <img class="bgleft" src="icon/2.svg" width="250" height="200">
         <div class="top">
             <div class="txleft"><h3>Announcement</h3></div>
-            <div class="nama">Selamat datang <p>Di Website Saya Agung Perdana</p></div>
+            <div class="nama">Selamat datang <p>Di Website Kami kawan</p></div>
         </div>
         <ul class="menu1">
             <li><a href="#">Mail</a></li>
@@ -23,12 +23,12 @@
         </ul>
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Home">Profile</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScE6TeDu8bYMW5OIEp5dGbDa9oWyAsVKmhLjByFIBrkTKtGhA/viewform?usp=sf_link" target="_blank">Penilaian</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page/profil.html">Profile</a></li>
+                <li><a href="page/akademik.html">Akademik</a></li>
                 <li><a href="#Home">Creative Park</a></li>
                 <li><a href="#Home">Fakultas</a></li>
-                <li><a href="#Home">PMB</a></li></ul>
+                <li><a href="page/pmb.html">PMB</a></li></ul>
             <div class="menu-togle">
             <input type="checkbox">
             <span></span>
@@ -44,21 +44,41 @@
        
       
     </header>
-    <div class="atas"></div>
+    <div class="atas">
+        <div class="logoleft">
+            <img src="icon/amikom.png" width="320" height="70">
+        </div>
+        <div class="icont">
+            <img src="icon/phone.png" width="40" height="40">
+            <ul>
+                <li>Telp :+62 274884 201 Ext. 612</li>
+                <li>Email :io@amikom.ac.id</li>
+                <li>Fax :+62 274884 208</li>
+            </ul>
+        </div>
+        <div class="iconh">
+            <img src="icon/home.png" width="50" height="50">
+            <ul>
+                <li>Jl. Ring Road Utara, Condong</li>
+                <li>Catur, Sleman, Yogyakarta 55283</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="bar-container">
         <ul class="midbar">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Home">Profile</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScE6TeDu8bYMW5OIEp5dGbDa9oWyAsVKmhLjByFIBrkTKtGhA/viewform?usp=sf_link" target="_blank">Penilaian</a></li>
-            <li><a href="#Home">Creative Park</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page/profil.html">Profile</a></li>
+            <li><a href="page/akademik.html">Akademik</a></li>
+            <li><a href="coba.html">Creative Park</a></li>
             <li><a href="#Home">Fakultas</a></li>
-            <li><a href="#Home">PMB</a></li>
+            <li><a href="page/pmb.html" target="_blank">PMB</a></li>
             <form>
                 <input style="float: right;" type="text" name="search" placeholder="Search...">
             </form>
-            <button style="float: right;" class="button button1">Login</button>
-           </ul>
+            <a href="login/index.html" target="_blank"><button style="float: right;" class="button button1" onclick="openForm()">Login</button></a>
+           </ul> 
+
        </div>
        <div class='slide'>
         <input type='radio' name='radio-set' checked='checked' />
@@ -73,39 +93,39 @@
         <input type='radio' name='radio-set' />
         <img src='./img/desk.png'/>
       </div>
-      
-
     </div>
+    
     <div class="kotak">
         <div class="kotak1">
-            <img class="news" src="icon/news.png" width="100" height="100">
+            <a href="#"><img class="news" src="icon/news.png" width="100" height="100"></a>
             <h3 class="tk1">Berita Utama</h3>
             <p class="isi1">Ini berisikan berita dari dosen dan</p>
             <p class="isi1">luar kampus untuk mahasiswa</p>
             <p class="isi1">sebgaai pengetahuan</p>
         </div>
         <div class="kotak2">
-            <img class="sound" src="icon/sound.png" width="90" height="90">
+            <a href="#"><img class="sound" src="icon/sound.png" width="90" height="90"></a>
             <h3 class="tk2">Info Kampus</h3>
             <p class="isi2">Informasi terkait kampus dan Kuliah</p>
             <p class="isi2">untuk mahasiswa agar tetap</p>
             <p class="isi2">update tentang Kuliah</p>
         </div>
         <div class="kotak3">
-            <img class="piala" src="icon/piala.png" width="80" height="80">
+            <a href="#"><img class="piala" src="icon/piala.png" width="80" height="80"></a>
             <h3 class="tk3">Achievement</h3>
             <p class="isi3">Ini berisikan tentang penghargaan</p>
             <p class="isi3">kampus dan mahasiswa sebgaai</p>
             <p class="isi3">motivasi untuk mahasiswa</p>
         </div>
         <div class="kotak4">
-            <img class="gallery" src="icon/gallery.png" width="80" height="80">
+            <a href="#"><img class="gallery" src="icon/gallery.png" width="80" height="80"></a>
             <h3 class="tk4">Gallery</h3>
             <p class="isi4">Ini berisikan documentasi kampus</p>
             <p class="isi4">mengenai kegiatan kampus</p>
             <p class="isi4">dan juga penghargaan</p>
         </div>
     </div>
+
     <div class="asosiasi">
         <figure>   
         <img src="gambar/asosiasi.jpg">
@@ -141,9 +161,9 @@
         <div class="foot5">
             <ul class="ft5">
                 <p>Unduh App Amikom ONE</p>
-                    <img class="play" src="gambar/play.png" width="180" height="70">
+                <a href="#"><img class="play" src="gambar/play.png" width="180" height="70"></a>
                 <p class="app">
-                    <img class="ap" src="gambar/app.png" width="170" height="50"></p>
+                    <a href="#"><img class="ap" src="gambar/app.png" width="170" height="50"></p></a></ul>
             </ul>
         </div>
         <div class="foot6">
@@ -153,7 +173,9 @@
             <img src="icon/twitter.png" width="30" height="30">
             <img src="icon/facebook.png" width="30" height="30">
         </div>
-    </div>    
+    </div> 
+    
+    
 </body>
 
 </html>
